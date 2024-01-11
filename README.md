@@ -15,12 +15,11 @@ Before running the project, make sure you have the following installed:
 1. **Clone the Repository:**
 
     ```bash
-    git clone https://github.com/your-username/two-factor-authentication.git
+    git clone https://github.com/hasandel01/two-factor-authentication.git
     cd two-factor-authentication
     ```
 
 ### Backend Setup
-
 
 1. **Open the Project in IntelliJ IDEA:**
 
@@ -36,18 +35,29 @@ Before running the project, make sure you have the following installed:
         - Configure your project settings and add the necessary dependencies.
         - Click `Finish` to create the project.
 
-3. **Needed Dependencies:**
+3. **Configure MySQL Database:**
 
-    - Open the `pom.xml` file and you can see all needed dependencies for the project.
-   
-4. **Run the Application:**
+    - Download and install [MySQL](https://dev.mysql.com/downloads/).
+    - Create a new database for your project.
+
+4. **Update Database Configuration:**
+
+    - Open the `application.yml` file in the `src/main/resources` folder.
+    - Update the `spring.datasource.url`, `spring.datasource.username`, and `spring.datasource.password` properties with your MySQL database information.
+
+5. **Needed Dependencies:**
+
+    - Open the `pom.xml` file, where you can find all the necessary dependencies for the project.
+
+6. **Run the Application:**
 
     - Locate the main application file (e.g., `TwoFactorAuthenticationApplication.java`).
     - Right-click on the file and choose `Run` to start the Spring Boot application.
 
-5. **Access the Application:**
+7. **Access the Application:**
 
     - Once the application is running, you can access it at [http://localhost:8080](http://localhost:8080) in your web browser.
+
 
 # Angular Frontend for Two Factor Authentication
 
